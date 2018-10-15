@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tip Calculator</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <script type="text/javascript" src="tipCalculator.js">
-
-    </script>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div id="container">
@@ -17,6 +14,7 @@
           $<input id="billAmount" type="text" placeholder="Bill Amount">
           <p>How was your service?</p>
           <select id="serviceQuality">
+            <option disabled selected>Choose Option</option>
             <option value=".15">15% - Poor</option>
             <option value=".20">20% - Average</option>
             <option value=".25">25% - Excellent</option>
@@ -24,14 +22,18 @@
         </form>
         <p>How many people are sharing the bill?</p>
         <input id="peopleAmount" type="text" placeholder="Number of People">
-        <button id="button" type="button" name="button">Calculate Tip!</button>
+        <button type="button" id="calculate" name="button">Calculate Tip!</button>
       </div>
       <!-- End of calculator -->
       <div id="totalTip">
         <sup>$</sup><span id="tip">0.00</span>
         <small id="each">Each</small>
       </div>
+      <!-- End of totalTip -->
     </div>
+    <!-- End of container -->
+    <script type="text/javascript" src="js/tipCalculator.js">
 
+    </script>
   </body>
 </html>
