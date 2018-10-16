@@ -14,7 +14,7 @@ function calculateTip() {
 
 //Check if peopleAmount is empty
   if(peopleAmount === "" || peopleAmount <= 1){
-  peopleAmount = 1;
+    peopleAmount = 1;
     document.getElementById("each").style.display = 'none';
   } else {
     document.getElementById("each").style.display = "block";
@@ -31,7 +31,6 @@ function calculateTip() {
 }
 //Hide tip amount until after calculated
  document.getElementById("totalTip").style.display = "none";
- document.getElementById("each").style.display = "none";
 
 //button functionality
 document.getElementById("calculate").onclick = function(){
